@@ -1,0 +1,11 @@
+{
+  "name": "AccountableBot",
+  "version": "0.1",
+  "description": "Accountable Menace's Discord bot",
+  "main": "bot.js",
+  "author": "Accountable Menace",
+  "dependencies": {
+    "discord.io": "github:woor/discord.io#gateway_v6",
+    "winston": "^2.4.1"
+  }
+}
