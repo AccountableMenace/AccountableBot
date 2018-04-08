@@ -1,6 +1,6 @@
 {
   "name": "AccountableBot",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "Accountable Menace's Discord bot",
   "main": "bot.js",
   "author": "Accountable Menace",
@@ -18,5 +18,6 @@
     "winston": "^2.4.1",
     "xhr-request": "^1.1.0",
     "xml2js": "^0.4.19"
-  }
+  },
+  "start": "node bot.js"
 }
