@@ -8,6 +8,8 @@ var fs = require('file-system');
 var ffmpegPath = ''
 var FfmpegCommand = require('fluent-ffmpeg');
 var heroku = require("heroku");
+const express = require('express');
+const app = express();
 
 var lastBotVoiceChannel = "0";
 
@@ -30,6 +32,7 @@ bot.on('ready', function (evt) {
     logger.info('Connected');
     logger.info('Logged in as: ');
     logger.info(bot.username + ' - (' + bot.id + ')');
+    app.listen(process.env.PORT || 8080);
 
 
     //something with ffmpeg
