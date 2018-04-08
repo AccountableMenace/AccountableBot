@@ -1,6 +1,6 @@
 {
   "name": "AccountableBot",
-  "version": "0.1",
+  "version": "1.0",
   "description": "Accountable Menace's Discord bot",
   "main": "bot.js",
   "author": "Accountable Menace",
