@@ -5,7 +5,7 @@ var request = require('xhr-request')
 var parseString = require('xml2js').parseString;
 var Stream = require('stream');
 var fs = require('file-system');
-var ffmpegPath = '/bin/ffmpeg/'
+var ffmpegPath = ''
 var FfmpegCommand = require('fluent-ffmpeg');
 var heroku = require("heroku");
 
@@ -167,7 +167,7 @@ function playAudio(voiceChannel, source) {
             console.log(getTime() + JSON.stringify(stream));
             //Create a stream to your file and pipe it to the stream
             //Without {end: false}, it would close up the stream, so make sure to include that.  
-            fs.createReadStream("Drama.mp3").pipe(stream, { end: false });
+            fs.createReadStream(source).pipe(stream, { end: false });
             
             
         }
