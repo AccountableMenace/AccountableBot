@@ -5,10 +5,10 @@
   "main": "bot.js",
   "author": "Accountable Menace",
   "engines": {
-	"node": "8.11.1"
+    "node": "8.11.1"
   },
   "dependencies": {
-    "discord.io": "github:woor/discord.io#gateway_v6",
+    "discord.io": "github:woor/discord.io#gateway_v6 winston",
     "npm": "^5.8.0",
     "stream": "0.0.2",
     "winston": "^2.4.1",
