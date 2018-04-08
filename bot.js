@@ -144,7 +144,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 
                 }
                 else if (args[0] == "play") {
-                    playAudio(lastBotVoiceChannel, "drama.mp3");
+                    playAudio(lastBotVoiceChannel, args[1]);
                 }
                 break;
             case 'test':
