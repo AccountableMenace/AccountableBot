@@ -5,7 +5,7 @@ var request = require('xhr-request')
 var parseString = require('xml2js').parseString;
 var Stream = require('stream');
 var fs = require('fs');
-var ffmpegPath = '/bin/ffmpeg/ffmpeg.exe'
+var ffmpegPath = '/bin/ffmpeg/'
 var FfmpegCommand = require('fluent-ffmpeg');
 var heroku = require("heroku");
 
@@ -30,7 +30,6 @@ bot.on('ready', function (evt) {
     logger.info('Connected');
     logger.info('Logged in as: ');
     logger.info(bot.username + ' - (' + bot.id + ')');
-
 
 
     //something with ffmpeg
