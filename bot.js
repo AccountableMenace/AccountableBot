@@ -166,7 +166,7 @@ function playAudio(voiceChannel, source) {
     bot.getAudioContext(voiceChannel, function (error, stream) {
         if (error) console.log(getTime() + error);
         else {
-            console.log(getTime() + stream);
+            console.log(getTime() + Json.stringify(stream));
             //Create a stream to your file and pipe it to the stream
             //Without {end: false}, it would close up the stream, so make sure to include that.  
             fs.createReadStream("Drama.mp3").pipe(stream, { end: false });
