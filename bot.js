@@ -169,7 +169,7 @@ function playAudio(voiceChannel, source) {
             console.log(getTime() + stream);
             //Create a stream to your file and pipe it to the stream
             //Without {end: false}, it would close up the stream, so make sure to include that.  
-            fs.createReadStream(source).pipe(stream, { end: false });
+            fs.createReadStream("Drama.mp3").pipe(stream, { end: false });
         }  
     });
 
