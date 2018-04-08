@@ -8,8 +8,8 @@
     "node": "8.11.1"
   },
   "dependencies": {
-    "discord.io": "github:Woor/discord.io#gateway_v6",
-	"discord.io": "2.5.3",
+    "discord.io": "github:izy521/discord.io#2.4.0",
+    "fluent-ffmpeg": "github:fluent-ffmpeg/node-fluent-ffmpeg",
     "fs": "0.0.1-security",
     "npm": "^5.8.0",
     "stream": "0.0.2",

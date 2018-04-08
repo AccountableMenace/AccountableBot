@@ -5,6 +5,7 @@ var request = require('xhr-request')
 var parseString = require('xml2js').parseString;
 var Stream = require('stream');
 var fs = require('fs');
+var ffmpeg = require('fluent-ffmpeg');
 
 var lastBotVoiceChannel;
 
