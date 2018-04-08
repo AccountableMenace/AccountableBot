@@ -31,7 +31,6 @@ bot.on('ready', function (evt) {
     logger.info('Logged in as: ');
     logger.info(bot.username + ' - (' + bot.id + ')');
 
-
     //something with ffmpeg
     FfmpegCommand.setFfmpegPath(ffmpegPath);
 });
@@ -169,7 +168,9 @@ function playAudio(voiceChannel, source) {
             //Create a stream to your file and pipe it to the stream
             //Without {end: false}, it would close up the stream, so make sure to include that.  
             fs.createReadStream("Drama.mp3").pipe(stream, { end: false });
-        }  
+            
+            
+        }
     });
 
 
