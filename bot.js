@@ -164,10 +164,12 @@ function playAudio(voiceChannel, source) {
     console.log(getTime() + "Trying to play audio from source " + source);
     //get the audio context
     bot.getAudioContext(voiceChannel, function (error, stream) {
-        if (error) return console.error(error);
-        //Create a stream to your file and pipe it to the stream
-        //Without {end: false}, it would close up the stream, so make sure to include that.  
-        fs.createReadStream(source).pipe(stream, { end: false });
+        if (error) console.log(getTime() + error);
+        else {
+            //Create a stream to your file and pipe it to the stream
+            //Without {end: false}, it would close up the stream, so make sure to include that.  
+            fs.createReadStream(source).pipe(stream, { end: false });
+        }  
     });
 
 
