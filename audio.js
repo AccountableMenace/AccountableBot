@@ -7,7 +7,7 @@ var client = new Discord.Client({
     token: auth.token
 });
 
-var VCID = "379204477682450434";
+var VCID = "341556741265162242";
 var song = "Drama.mp3";
 
 client.on('ready', function() {

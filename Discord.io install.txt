@@ -1,0 +1,6 @@
+npm install discord.io github:woor/discord.io#gateway_v6 winston --save
+
+Do you need --save? no
+
+
+npm install discord.io github:woor/discord.io#gateway_v6 winston
