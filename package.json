@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "discord.io": "github:Woor/discord.io#gateway_v6",
-    "fluent-ffmpeg": "github:fluent-ffmpeg/node-fluent-ffmpeg",
+    "fluent-ffmpeg": "^2.1.2",
     "fs": "0.0.1-security",
     "npm": "^5.8.0",
     "stream": "0.0.2",
