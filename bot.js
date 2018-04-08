@@ -32,7 +32,7 @@ bot.on('ready', function (evt) {
     logger.info(bot.username + ' - (' + bot.id + ')');
 
     var port = process.env.PORT || 3000;
-    app.listen(port, "0.0.0.0", function () {
+    bot.listen(port, "0.0.0.0", function () {
         console.log(getTime() + "Listening on Port 3000");
     });
 
