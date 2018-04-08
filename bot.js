@@ -5,9 +5,11 @@ var request = require('xhr-request')
 var parseString = require('xml2js').parseString;
 var Stream = require('stream');
 var fs = require('fs');
-var ffmpeg = require('fluent-ffmpeg');
+var ffmpegPath = '/bin/ffmpeg/ffmpeg.exe'
+var FfmpegCommand = require('fluent-ffmpeg');
 
-var lastBotVoiceChannel;
+
+var lastBotVoiceChannel = "0";
 
 
 var drama = "Drama.mp3";
@@ -28,6 +30,11 @@ bot.on('ready', function (evt) {
     logger.info('Connected');
     logger.info('Logged in as: ');
     logger.info(bot.username + ' - (' + bot.id + ')');
+    
+
+
+    //something with ffmpeg
+    FfmpegCommand.setFfmpegPath(ffmpegPath);
 });
 
 bot.on('message', function (user, userID, channelID, message, evt) {
@@ -142,6 +149,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 break;
             case 'test':
                 console.log(getTime() + "TEST");
+
                 break;
 
 
@@ -151,6 +159,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 
 
 function playAudio(voiceChannel, source) {
+
 
     console.log(getTime() + "Trying to play audio from source " + source);
     //get the audio context
