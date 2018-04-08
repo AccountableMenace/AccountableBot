@@ -4,3 +4,11 @@ Do you need --save? no
 
 
 npm install discord.io github:woor/discord.io#gateway_v6 winston
+
+or
+
+
+
+npm install winston
+npm install discord.io
+npm install github:woor/discord.io#gateway_v6

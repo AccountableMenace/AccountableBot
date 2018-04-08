@@ -8,7 +8,9 @@
     "node": "8.11.1"
   },
   "dependencies": {
-    "discord.io": "github:woor/discord.io#gateway_v6 winston",
+    "discord.io": "github:Woor/discord.io#gateway_v6",
+	"discord.io": "2.5.3",
+    "fs": "0.0.1-security",
     "npm": "^5.8.0",
     "stream": "0.0.2",
     "winston": "^2.4.1",
