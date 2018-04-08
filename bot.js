@@ -7,7 +7,7 @@ var Stream = require('stream');
 var fs = require('fs');
 var ffmpegPath = '/bin/ffmpeg/ffmpeg.exe'
 var FfmpegCommand = require('fluent-ffmpeg');
-
+var heroku = require("heroku");
 
 var lastBotVoiceChannel = "0";
 
@@ -30,7 +30,7 @@ bot.on('ready', function (evt) {
     logger.info('Connected');
     logger.info('Logged in as: ');
     logger.info(bot.username + ' - (' + bot.id + ')');
-    
+
 
 
     //something with ffmpeg
@@ -49,7 +49,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         switch (cmd) {
             // ping
             case 'ping':
-                // a way to get bot message id                               v                                                                                                  v
+                // a way to get bot message id
                 bot.sendMessage({
                     to: channelID, /* message: 'aasdf',*/ embed: {
                         color: 6826080,
