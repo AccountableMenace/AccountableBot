@@ -4,9 +4,9 @@
   "description": "Accountable Menace's Discord bot",
   "main": "bot.js",
   "author": "Accountable Menace",
-  "engines":{
+  "engines": {
 	"node": "8.11.1"
-  }
+  },
   "dependencies": {
     "discord.io": "github:woor/discord.io#gateway_v6",
     "npm": "^5.8.0",
