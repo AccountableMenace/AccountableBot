@@ -19,5 +19,8 @@
     "xhr-request": "^1.1.0",
     "xml2js": "^0.4.19"
   },
-  "start": "node bot.js"
+  "scripts": {
+	"start": "node bot.js"
+}
+  
 }
